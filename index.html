@@ -14,11 +14,10 @@
 <body>
 
 <div class="container">
-    <div class="container">
-        <div class="jumbotron" id="jumbotron">
-                <h1 class="text-center">Employee Data Management</h1>
-                <h3 class="text-center">A comprehensive directory of employee billable hours</h3>
-        </div>
+
+    <div class="jumbotron" id="jumbotron">
+            <h1 class="text-center">Employee Data Management</h1>
+            <h3 class="text-center">A comprehensive directory of employee billable hours</h3>
     </div>
 
     <!--Current Employee-->
@@ -28,31 +27,55 @@
         
         <!-- Table -->
         <table class="table">
-            ...
+            <thad>
+                <tr>
+                    <th>Employee Name</th>
+                    <th>Role</th>
+                    <th>Start Date MM/DD/YY</th>
+                    <th>Months Worked</th>
+                    <th>Monthly Rate ($)</th>
+                    <th>Total Billed ($)</th>
+                </tr>
+            </thad>
         </table>
     </div>
-
-    <div class="input-group">
-        <span class="input-group-addon" id="employee-name">Employee Name</span>
-        <input type="text" class="form-control" aria-describedby="basic-addon1">
-    </div>
-
-    <div class="input-group">
-        <span class="input-group-addon" id="role">Role</span>
-        <input type="text" class="form-control" aria-describedby="basic-addon1">
-    </div>
-
-    <div>
-        <span class="input-group-addon" id="start-date">Start Date</span>
-        <input type="text" class="form-control" placeholder="DD/MM/YY" aria-describedby="basic-addon1">
-    </div>
-
-    <div>
-        <span class="input-group-addon" id="monthly-rate">Monthly Rate</span>
-        <input type="text" class="form-control" aria-describedby="basic-addon1">
-    </div>
     
-        <button>Submit</button>
+    <br>
+
+
+    <div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">Add Employee</div>
+        <div class="input-group">
+            <span class="input-group-addon" id="employee-name">Employee Name</span>
+            <input type="text" class="form-control" aria-describedby="basic-addon1">
+        </div>
+
+        <br>
+
+        <div class="input-group">
+            <span class="input-group-addon" id="role">Role</span>
+            <input type="text" class="form-control" aria-describedby="basic-addon1">
+        </div>
+
+        <br>
+
+        <div class="input-group">
+            <span class="input-group-addon" id="start-date">Start Date</span>
+            <input type="text" class="form-control" aria-describedby="basic-addon1" placeholder="DD/MM/YY">
+        </div>
+
+        <br>
+
+        <div class="input-group">
+            <span class="input-group-addon" id="monthly-rate">Monthly Rate</span>
+            <input type="text" class="form-control" aria-describedby="basic-addon1">
+        </div>
+
+        <br>
+
+            <button>Submit</button>
+        </div>
     </div>
 
 </div>
