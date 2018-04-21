@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Employee Date Management</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">  
+    <script src="javascript.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="container">
+        <div class="jumbotron" id="jumbotron">
+                <h1 class="text-center">Employee Data Management</h1>
+                <h3 class="text-center">A comprehensive directory of employee billable hours</h3>
+        </div>
+    </div>
+
+    <!--Current Employee-->
+    <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Current Employee</div>
+        
+        <!-- Table -->
+        <table class="table">
+            ...
+        </table>
+    </div>
+
+    <div class="input-group">
+        <span class="input-group-addon" id="employee-name">Employee Name</span>
+        <input type="text" class="form-control" aria-describedby="basic-addon1">
+
+        <span class="input-group-addon" id="role">Role</span>
+        <input type="text" class="form-control" aria-describedby="basic-addon1">
+
+        <span class="input-group-addon" id="start-date">Start Date</span>
+        <input type="text" class="form-control" placeholder="DD/MM/YY" aria-describedby="basic-addon1">
+
+        <span class="input-group-addon" id="monthly-rate">Monthly Rate</span>
+        <input type="text" class="form-control" aria-describedby="basic-addon1">
+
+        <button>Submit</button>
+    </div>
+
+</div>
+    
+</body>
+</html>
