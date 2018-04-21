@@ -10,10 +10,6 @@ $(document).ready(function () {
   };
   firebase.initializeApp(config);
 
-
-1 Comment
-
-
   var employeeInfo = [];
 
  $("body").on("click", function addRow() {
