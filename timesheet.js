@@ -22,4 +22,25 @@ $(document).ready(function () {
   };
 });
 
+
+$("#add-employee").on("click", function(event) {
+  event.preventDefault();
+
+  // Grabbed values from text boxes
+  name = $("#name-input").val().trim();
+  role = $("#role-input").val().trim();
+  startDate = $("#start-input").val().trim();
+  monthlyRate = $("#monthly-input").val().trim();
+
+  // Code for handling the push
+  database.ref().push({
+    name: name,
+    role: role,
+    startDate: startDate,
+    monthlyRate: monthlyRate,
+    dateAdded: firebase.database.ServerValue.TIMESTAMP
+  });
+
+});
+
 });
