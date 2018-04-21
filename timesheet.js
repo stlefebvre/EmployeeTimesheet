@@ -10,6 +10,8 @@ $(document).ready(function () {
   };
   firebase.initializeApp(config);
 
+  var database = firebase.database();
+
   var employeeInfo = [];
 
  $("body").on("click", function addRow() {
